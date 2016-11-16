@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 /**
@@ -41,5 +42,5 @@ public class ConversionStepDefs {
         assertEquals(temperatureConverterPage.actualResult(), temperatureConverterPage.expectedResult());
         driver.quit();
     }
-    
+
 }
